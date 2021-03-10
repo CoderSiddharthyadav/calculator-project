@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <script>
+       
+        function backspace() {
+            var value = document.getElementById("result").value
+            document.getElementById("result").value = value.substring(0, value.length - 1)
+        }
+
+
+        function dis(val) {
+            document.getElementById("result").value += val
+        }
+        function solve() {
+            var x = document.getElementById("result").value
+            var y = eval(x)
+            document.getElementById("result").value = y
+        }
+        function clr() {
+            document.getElementById("result").value = " "
+        }
+    </script>
+    <style>
+      
+
+        input[type="button"] {
+           
+            color: white;
+            width: 75px;
+            height: 75px;
+            font-size: 50px;
+            border-radius: 50%;
+            border-style:none;
+             
+            background-color: black;
+
+            
+        }
+
+        body {
+            background-color:aqua;
+            border-style:ridge;
+            border-color :  blue ;
+            border-width:28px;
+           
+
+            
+        }
+        .a{
+            width:318px;
+            height: 456px;
+            background-color: lime;
+            border-radius: 25px; 
+            margin-left:450px;
+            margin-bottom: 20px;
+            border: 24px groove coral;
+
+            
+
+        }
+    </style>
+</head>
+
+<body>
+   
+        <marquee>
+            <h4 >❤💚JAY GURU DEV💛💖</h4>
+        </marquee>
+    
+   
+       <div class="a">
+        <input type="text" id="result" style="background-color:magenta ;border-style: none;font-size: 50px;  width: 316px;height: 75px;border-radius: 50px; " /><br>
+
+       
+
+            <input type="button" value="backspace" style="background-color:red; width:160px;border-radius:50px;font-size: 31px; " onclick="backspace()" />
+
+           
+            <input type="button" value="clear all" style="background-color:red;width:151px;border-radius:50px;font-size: 35px;" onclick="clr()" /><br>
+        
+       
+            <input type="button" value="1" onclick="dis('1')" />
+            <input type="button" value="2" onclick="dis('2')" />
+            <input type="button" value="3" onclick="dis('3')" />
+            <input type="button" value="+" style="background-color: blue;" onclick="dis('+')" /><br>
+
+        
+       
+            <input type="button" value="4" onclick="dis('4')" />
+            <input type="button" value="5" onclick="dis('5')" />
+            <input type="button" value="6" onclick="dis('6')" />
+           <input type="button" value="-" style="background-color:blue;" onclick="dis('-')" /><br>
+        
+       
+            <input type="button" value="7" onclick="dis('7')" />
+            <input type="button" value="8" onclick="dis('8')" />
+            <input type="button" value="9" onclick="dis('9')" />
+            <input type="button" value="*" style="background-color: blue;" onclick="dis('*')" /><br>
+        
+       
+            <input type="button" value="0" onclick="dis('0')" />
+            <input type="button" value="." onclick="dis('.')" />
+            <input type="button" value="=" onclick="solve()"/>
+            <input type="button" value="/" style="background-color: blue;" onclick="dis('/')" /><br>
+        </div>
+    
+</body>
+
+</html>
